@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./res/favicon.ico">
+    <title>SSBM RNG Manip</title>
+</head>
+
+<body>
+    <div id="header-container">
+        <h id="page-header">RNG Actions</h>
+    </div>
+    <hr>
+    <div id="content-container">
+
+        <div class="input-container">
+            <p class="manual-entry-label" id="manual-seed-prefix">Rolls Count:</p>
+            <form action="#" onsubmit="getActionSequence()"><input type="text" id="num-rolls" placeholder="Roll Count"></form>
+            <button id="search-button" class="control-button" onclick="getActionSequence()">Search</button>
+        </div>
+
+        <div id="results-container">
+            <div id="results">
+                <p id="summary"></p>
+                <p id="actions"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

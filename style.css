@@ -1,0 +1,8 @@
+.action-line {
+    margin: 0;
+    font-family: monospace;
+}
+
+form {
+    display: inline-block;
+}
